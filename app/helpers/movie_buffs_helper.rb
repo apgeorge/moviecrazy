@@ -1,0 +1,2 @@
+module MovieBuffsHelper
+end

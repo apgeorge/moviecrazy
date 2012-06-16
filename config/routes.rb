@@ -1,4 +1,6 @@
 Moviecrazy::Application.routes.draw do
+  resources :movie_buffs
+	
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
