@@ -89,6 +89,13 @@
     %p What are some of you favourite genres.
   .desc
     %p "I have an affinity for drama, any kind of drama and a good story. Not a fan of horror. And who doesn't love a good comedy, romantic or not. Other than that I am a huge sci-fi fan."
+
+.movie_taste
+  .label
+    %p What is your taste in movies like.
+  .desc
+    %p "I like to watch foreign language films as they give me an insight into life in other cultures. Movies with good conversational dialogues appeal to me a lot. 
+    Other than any movie with a good story is something that I like to watch"
     
 
 .contact_details
@@ -204,6 +211,9 @@
           %p Real Steel
         .detail 
           %p Absolutely heart warming saga of a boy, his father and his robot.
+    .suggest
+      %p= link_to "Suggest a movie","#"
+
   .horror
     %h4 Horror
     %p The top horror movies that I think are a must watch.
@@ -220,6 +230,10 @@
           %p Real Steel
         .detail 
           %p Absolutely heart warming saga of a boy, his father and his robot.
+    .suggest
+      %p= link_to "Suggest a movie","#"
+
+          
   .thriller
   .comedy
   .action
@@ -236,29 +250,6 @@
 .my_goals
   %p These are the movie goals for me.
   .goals
-    .goal
-      .title
-        %p All Eric Rohmer movies.
-      .desc
-        %p Quite like his style and his choice of themes.
-      .progress
-        .watched 
-          %p 3/10 Watched. 
-        .percent
-          %p 30% Complete
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p A Winter's Tale
-          .detail 
-            %p  
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p La Collectionneuse
-          .detail 
-            %p 
     .goal
       .title
         %p All Wong Kar Wai movies.
@@ -281,7 +272,9 @@
           .title 
             %p La Collectionneuse
           .detail 
-            %p 
+            %p
+      .suggest
+        %p= link_to "Suggest a movie","#"
     .goal
       .title
         %p All Britt Marling movies.
@@ -304,8 +297,78 @@
           .title 
             %p La Collectionneuse
           .detail 
+            %p
+      .suggest
+        %p= link_to "Suggest a movie","#"
+    .goal
+      .title
+        %p Ram Gopal Varma's Gangster Movie Recommendations
+      .desc
+        %p No one makes Bollywood gangster movies like Ram Gopal!
+      .progress
+        .watched 
+          %p 1/10 Watched. 
+        .percent
+          %p 10% Complete
+      %ul.movies
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p A Winter's Tale
+          .detail 
+            %p  
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p La Collectionneuse
+          .detail 
             %p 
-
+    .goal
+      .title
+        %p Nicola Johnson's Rom Com Movie Recommendations
+      .desc
+        %p A good collection of Rom-coms by Nicola here, not overtly mushy or cheesy.
+      .progress
+        .watched 
+          %p 1/10 Watched. 
+        .percent
+          %p 10% Complete
+      %ul.movies
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p A Winter's Tale
+          .detail 
+            %p  
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p La Collectionneuse
+          .detail 
+            %p 
+    .goal
+      .title
+        %p IMDb top 250 movies
+      .desc
+        %p Have watched most, would love to tick off the rest.
+      .progress
+        .watched 
+          %p 100/250 Watched. 
+        .percent
+          %p 40% Complete
+      %ul.movies
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p A Winter's Tale
+          .detail 
+            %p  
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p La Collectionneuse
+          .detail 
+            %p
 
 .my_watchs
     
