@@ -202,9 +202,9 @@
       %li.movie
         = image_tag "http://placehold.it/100x60"
         .title 
-          %p Leap Year
+          %p Bridge on River Kwai
         .detail 
-          %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+          %p Quite a classic
       %li.movie
         = image_tag "http://placehold.it/100x60"
         .title 
@@ -213,7 +213,22 @@
           %p Absolutely heart warming saga of a boy, his father and his robot.
     .suggest
       %p= link_to "Suggest a movie","#"
-
+    .post_comment
+      %p= link_to "Comment","#"
+    .comments
+      %p Comments
+      %ul
+        %li.comment
+          .type Movie Suggestion:
+          .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Ronald Rutherford
+        %li.comment
+          .desc Quite like this list. I am going to add this to my goal :-)
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Rambowie Lavar
   .horror
     %h4 Horror
     %p The top horror movies that I think are a must watch.
@@ -232,6 +247,21 @@
           %p Absolutely heart warming saga of a boy, his father and his robot.
     .suggest
       %p= link_to "Suggest a movie","#"
+    .comment
+      %p= link_to "Comment","#"
+    .comments
+      %p Comments
+      %ul
+        %li.comment
+          .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Ronald Rutherford
+        %li.comment
+          .desc What about Ramboo 4?
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Rambowie Lavar
 
           
   .thriller
@@ -275,6 +305,22 @@
             %p
       .suggest
         %p= link_to "Suggest a movie","#"
+      .comment
+        %p= link_to "Comment","#"
+      .comments
+        %p Comments
+        %ul
+          %li.comment
+            .type Movie Suggestion:
+            .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+            .author 
+              .avatar= image_tag "http://placehold.it/20x20"
+              .name Ronald Rutherford
+          %li.comment
+            .desc What about Ramboo 4?
+            .author 
+              .avatar= image_tag "http://placehold.it/20x20"
+              .name Rambowie Lavar
     .goal
       .title
         %p All Britt Marling movies.
