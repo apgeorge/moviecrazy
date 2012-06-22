@@ -196,7 +196,7 @@
 .my_recommendations
   %p These are my movie recommendations.
   .war
-    %h4 War
+    %h4 Genre: War
     %p The top war movies that I think are a must watch.
     %ul.movies
       %li.movie
@@ -230,8 +230,41 @@
             .avatar= image_tag "http://placehold.it/20x20"
             .name Rambowie Lavar
   .horror
-    %h4 Horror
+    %h4 Genre: Horror
     %p The top horror movies that I think are a must watch.
+    %ul.movies
+      %li.movie
+        = image_tag "http://placehold.it/100x60"
+        .title 
+          %p Leap Year
+        .detail 
+          %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+      %li.movie
+        = image_tag "http://placehold.it/100x60"
+        .title 
+          %p Real Steel
+        .detail 
+          %p Absolutely heart warming saga of a boy, his father and his robot.
+    .suggest
+      %p= link_to "Suggest a movie","#"
+    .comment
+      %p= link_to "Comment","#"
+    .comments
+      %p Comments
+      %ul
+        %li.comment
+          .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Ronald Rutherford
+        %li.comment
+          .desc What about Ramboo 4?
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Rambowie Lavar
+  .happy
+    %h4 Movie Mood: Happy
+    %p These are the movies to watch when you are happy
     %ul.movies
       %li.movie
         = image_tag "http://placehold.it/100x60"
@@ -416,7 +449,52 @@
           .detail 
             %p
 
-.my_watchs
+.caught_my_eye
+  %h4 Caught My Eye
+  %p These are some of the movies that have caught my eye. Not yet decided if they are worth watching.
+  .goals
+    .goal
+      .title
+        %p All Wong Kar Wai movies.
+      .desc
+        %p Very interesting direction style.
+      .progress
+        .watched 
+          %p 2/10 Watched. 
+        .percent
+          %p 20% Complete
+      %ul.movies
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p A Winter's Tale
+          .detail 
+            %p  
+        %li.movie
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p La Collectionneuse
+          .detail 
+            %p
+      .suggest
+        %p= link_to "Suggest a movie","#"
+      .comment
+        %p= link_to "Comment","#"
+      .comments
+        %p Comments
+        %ul
+          %li.comment
+            .type Movie Suggestion:
+            .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+            .author 
+              .avatar= image_tag "http://placehold.it/20x20"
+              .name Ronald Rutherford
+          %li.comment
+            .desc What about Ramboo 4?
+            .author 
+              .avatar= image_tag "http://placehold.it/20x20"
+              .name Rambowie Lavar
+
     
     
     
