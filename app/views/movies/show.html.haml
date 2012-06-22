@@ -1,1 +1,151 @@
+.movie
+  .title 
+    %h1 Saw
+    %h3 2004
+  .poster
+    = image_tag "http://placehold.it/200x300"
+  .tagline
+    .label
+      %h2 Tagline
+    .desc
+      %p "Live or die. Make your choice."
+  .genres
+    %h2 Genre
+    %ul
+      %li.genre Horror 
+      %li.genre Thriller
+  .trailer
+    %h2 Trailer
+    %p= link_to "Watch the Trailer"
+  .rating
+    .overall
+      %h2 Overall Verdict: Must Watch
+    .recommended_by
+      %h3 Recommended by: 100 Movie buffs
+    .breakup
+      %h3 Breakup:
+      %table(border=1)
+        %thead
+          %th Rating
+          %th Following
+          %th Friends
+          %th All
+        %tr
+          %td Must Watch
+          %td 70%
+          %td 90%
+          %td 80%
+        %tr
+          %td Good Watch
+          %td 20%
+          %td 05%
+          %td 10%
+        %tr
+          %td One time Watch
+          %td 10%
+          %td 05%
+          %td 10%
+    .others
+      .rotten_tomatoes
+        %h3 Rotten Tomatoes
+        %p Critics: 48%
+        %p Audience: 86%
+        
+  .plot
+    %h2 Plot
+    %p 
+      Would you kill to live? That's what two men, Adam and Gordon, have to ask themselves when they're abducted by a serial killer and paired up in a deadly situation 
+      holed up in a prison constructed with such ingenuity that escape seems impossible. 
+      Attempting to break free might kill them, but their captor could decide at any moment that it's time to dismantle their bodies in his signature way.
 
+  .movie_mood_tag_cloud
+    %h2 Movie Moods Tag cloud
+    %ul
+      %li Thriller
+      %li Whoddunit
+      %li Twist Ending
+      
+  .stats
+    .lists
+      %h2 Lists:
+      %ul
+        %li All Time Favourites : 10 
+        %li Movies That I love : 50 
+        %li Top Thrillers : 25 
+        %li Top Horror : 10 
+        %li Recommendation Lists : 70 
+        %li Goal lists : 25 
+        %li Watch Lists : 50 
+        %li Custom Lists : 100 
+      
+      
+  .tags
+    %h2 Tags
+    %ul
+      %li Thriller
+      %li Whoddunit
+      %li Twist Ending
+  
+  .reviews
+    %h2 Reviews
+    .following
+      %h3 Reviews by people you are following
+      %ul
+        %li.review
+          .mini_pitch
+            %p "What if someone could make you kill to be alive?"
+          .mini_review
+            %p "Kept me glued throughout trying to unravel the mystery. And then all the reveals towards the ending, including the master reveal of an ending, totally unexpected. A definite must watch"
+          .verdict
+            %h4 Verdict: Must Watch
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Ronald Rutherford
+          .full_review
+            = link_to "Full Review","#"
+        %li.review
+          .mini_pitch
+            %p "What if someone could make you kill to be alive?"
+          .mini_review
+            %p "Kept me glued throughout trying to unravel the mystery. And then all the reveals towards the ending, including the master reveal of an ending, totally unexpected. A definite must watch"
+          .verdict
+            %h4 Verdict: Must Watch
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Ronald Rutherford
+          .full_review
+            = link_to "Full Review","#"
+    .friends
+      %h3 Reviews by friends
+      %ul
+        %li.review
+          .mini_pitch
+            %p "What if someone could make you kill to be alive?"
+          .mini_review
+            %p "Kept me glued throughout trying to unravel the mystery. And then all the reveals towards the ending, including the master reveal of an ending, totally unexpected. A definite must watch"
+          .verdict
+            %h4 Verdict: Must Watch
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Bill Longely
+          .full_review
+            = link_to "Full Review","#"
+    .popular
+      %h3 Popular Reviews
+      %ul
+        %li.review
+          .mini_pitch
+            %p "What if someone could make you kill to be alive?"
+          .mini_review
+            %p "Kept me glued throughout trying to unravel the mystery. And then all the reveals towards the ending, including the master reveal of an ending, totally unexpected. A definite must watch"
+          .verdict
+            %h4 Verdict: Must Watch
+          .author 
+            .avatar= image_tag "http://placehold.it/20x20"
+            .name Bill Longely
+          .full_review
+            = link_to "Full Review","#"
+
+      
+      
+      
