@@ -1,57 +1,84 @@
-= image_tag "http://placehold.it/128x128"
+
+
+.row
+  .span2
+    = image_tag "http://placehold.it/128x128"
   
-%h2.name 
-  Roonie Wadia
-
-%h3.prof_title 
-  Film student, London Film School
-
-%h4.about_me_liner
-  "I love the movies!"
-  
-.level
-  .label
-    %p Level:
-  .desc
-    %p Newbie 
-
-.reputation
-  .label
-    %p Reputation:
-  .desc
-    %p 100
-
+  .span8
+    %h2.name 
+      Roonie Wadia
     
-.level
-  .label
-    %p Age:
-  .desc
-    %p 22 
-
-.reputation
-  .label
-    %p Location:
-  .desc
-    %p London
-
-.stats
-  .profile_views
-    .label
-      %p Profile Views:
-    .desc
-      10
-  .last_login
-    .label
-      %p Seen:
-    .desc
-      12 hours ago
-  .member_since
-    .label
-      %p Member since:
-    .desc
-      1 year, 10 months
+    %h3.prof_title 
+      Film student, London Film School
+    
+    %h4.about_me_liner
+      "I love the movies!"
       
-
+  .span2
+    %ul.stats(class="unstyled")
+      %li
+        %a(href="#")
+          %strong
+            20
+          %span
+            Followers
+      %li
+        %a(href="#")
+          %strong
+            120
+          %span
+            Following
+      %li
+        %a(href="#")
+          %strong
+            10
+          %span
+            Lists
+      
+.row
+  .span4
+    .level
+      .label
+        %p Level:
+      .desc
+        %p Newbie 
+    
+    .reputation
+      .label
+        %p Reputation:
+      .desc
+        %p 100
+      
+    .level
+      .label
+        %p Age:
+      .desc
+        %p 22 
+  
+    .location
+      .label
+        %p Location:
+      .desc
+        %p London
+        
+  .span4      
+    .stats
+      .profile_views
+        .label
+          %p Profile Views:
+        .desc
+          10
+      .last_login
+        .label
+          %p Seen:
+        .desc
+          12 hours ago
+      .member_since
+        .label
+          %p Member since:
+        .desc
+          1 year, 10 months
+      
     
 .movie_persona
   .label

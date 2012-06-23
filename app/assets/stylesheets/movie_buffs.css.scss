@@ -1,3 +1,19 @@
 // Place all the styles related to the MovieBuffs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.stats {
+	a {
+    padding: 7px 12px;
+    color: #000;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+    border-left: 1px solid #E8E8E8;
+	
+	  strong {
+      color: #333;
+      font-size: 14px;
+    }
+	}
+}
