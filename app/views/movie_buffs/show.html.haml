@@ -73,14 +73,34 @@
           %td
             1 year, 10 months
           
+
+#tabrow.row
+  %ul.nav.nav-tabs
+    %li.active
+      %a(href="#tab1" data-toggle="tab")
+        About Me
+    %li
+      %a(href="#tab2" data-toggle="tab")
+        All Time Favourites
+    %li
+      %a(href="#tab3" data-toggle="tab")
+        Recommendations by Me
+    %li
+      %a(href="#tab4" data-toggle="tab")
+        Goals
+    %li
+      %a(href="#tab5" data-toggle="tab")
+        Caught My Eye
+    %li
+      %a(href="#tab6" data-toggle="tab")
+        More Lists
+
 #bottom.row
   #col1.span2
-    %p Secondary Nav Bar
-            
-  #col2.span10  
-      
-    
-    .bio    
+         
+  #col2.span10.tab-content  
+    .bio.tab-pane.active(id="tab1")
+      %h2 About Me    
       .about_me
         .question
           %p So tell us a little bit about yourself.
@@ -113,22 +133,22 @@
           %p "I like to watch foreign language films as they give me an insight into life in other cultures. Movies with good conversational dialogues appeal to me a lot. 
           Other than any movie with a good story is something that I like to watch"
         
-    
-    .contact_details
-      .facebook
-        %p Facebook: 
-        = link_to "http://www.facebook.com/ronnie.wadia"
-      .twitter
-        %p Twitter: 
-        = link_to "http://www.facebook.com/ronnie.wadia"
-      .website
-        %p Website: 
-        = link_to "http://www.facebook.com/ronnie.wadia"
-    
+      .contact_details
+        %h3 Contact    
+        .facebook
+          %p Facebook: 
+          = link_to "http://www.facebook.com/ronnie.wadia"
+        .twitter
+          %p Twitter: 
+          = link_to "http://www.facebook.com/ronnie.wadia"
+        .website
+          %p Website: 
+          = link_to "http://www.facebook.com/ronnie.wadia"
+      
         
         
-    .all_time_favourites
-      %p All Time Favourites
+    .all_time_favourites.tab-pane(id="tab2")
+      %h2 All Time Favourites
       %ul.favourites
         %li.favourite
           = image_tag "http://placehold.it/100x60"
@@ -161,8 +181,8 @@
           .detail 
             %p For filling me with wonder and awe at the imagination of a director dreaming how space travel would be like way back in 1969.
             
-    .movies_that_i_love
-      %p The movies that I love
+    .movies_that_i_love.tab-pane(id="tab6")
+      %h2 The movies that I love
       %ul.movies
         %li.movie
           = image_tag "http://placehold.it/100x60"
@@ -177,8 +197,8 @@
           .detail 
             %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
           
-    .movies_that_left_a_deep_impact
-      %p The movies that left a deep impact
+    .movies_that_left_a_deep_impact.tab-pane(id="tab7")
+      %h2 The movies that left a deep impact
       %ul.movies
         %li.movie
           = image_tag "http://placehold.it/100x60"
@@ -193,8 +213,8 @@
           .detail 
             %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
               
-    .movies_that_i_have_fondness_for
-      %p The movies that I have a fondness for.
+    .movies_that_i_have_fondness_for.tab-pane(id="tab8")
+      %h2 The movies that I have a fondness for.
       %ul.movies
         %li.movie
           = image_tag "http://placehold.it/100x60"
@@ -209,8 +229,8 @@
           .detail 
             %p Absolutely heart warming saga of a boy, his father and his robot.
     
-    .my_recommendations
-      %p These are my movie recommendations.
+    .my_recommendations.tab-pane(id="tab3")
+      %h2 These are my movie recommendations.
       .war
         %h4 Genre: War
         %p The top war movies that I think are a must watch.
@@ -326,8 +346,8 @@
       .documentary
       .fantasy
     
-    .my_goals
-      %p These are the movie goals for me.
+    .my_goals.tab-pane(id="tab4")
+      %h2 These are the movie goals for me.
       .goals
         .goal
           .title
@@ -465,8 +485,8 @@
               .detail 
                 %p
     
-    .caught_my_eye
-      %h4 Caught My Eye
+    .caught_my_eye.tab-pane(id="tab5")
+      %h2 Caught My Eye
       %p These are some of the movies that have caught my eye. Not yet decided if they are worth watching.
       .goals
         .goal
