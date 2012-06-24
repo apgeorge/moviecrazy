@@ -1,21 +1,37 @@
+#top.row(style="border-radius:10px")
+  .span2.center
+    %span.avatar(style="")
+      = image_tag "http://placehold.it/128x128"
+    .mini-bio
+      .rank
+        Newbie
+      %span.age
+        22,
+      %span.location
+        London
 
-
-.row
-  .span2
-    = image_tag "http://placehold.it/128x128"
-  
-  .span8
-    %h2.name 
+  .span6
+    %h1.name 
       Roonie Wadia
     
-    %h3.prof_title 
+    %h2.prof_title 
       Film student, London Film School
     
-    %h4.about_me_liner
+    %p.about_me_liner
       "I love the movies!"
+
+    .movie_persona
+      .desc
+        %p Drama lover, Sci-fi geek, Romantic fool 
       
-  .span2
-    %ul.stats(class="unstyled")
+    .current_movie_mood
+      .textlabel
+        %p Current Movie mood:
+      .movie_mood_quote
+        %p "Eric Rohmer movies, very interesting french movies by him."
+      
+  .span.pull-right
+    %ul.stats-tabs.unstyled
       %li
         %a(href="#")
           %strong
@@ -34,512 +50,485 @@
             10
           %span
             Lists
-      
-.row
-  .span4
-    .level
-      .label
-        %p Level:
-      .desc
-        %p Newbie 
-    
-    .reputation
-      .label
-        %p Reputation:
-      .desc
-        %p 100
-      
-    .level
-      .label
-        %p Age:
-      .desc
-        %p 22 
-  
-    .location
-      .label
-        %p Location:
-      .desc
-        %p London
-        
-  .span4      
-    .stats
-      .profile_views
-        .label
-          %p Profile Views:
-        .desc
-          10
-      .last_login
-        .label
-          %p Seen:
-        .desc
-          12 hours ago
-      .member_since
-        .label
-          %p Member since:
-        .desc
-          1 year, 10 months
-      
-    
-.movie_persona
-  .label
-    %p Movie Persona:
-  .desc
-    %p Drama lover, Sci-fi geek, Romantic fool 
-  
-.current_movie_mood
-  .label
-    %p Current Movie mood:
-  .desc
-    %p "Eric Rohmer movies, very interesting french movies by him."
-    
-.about_me
-  .label
-    %p So tell us a little bit about yourself.
-  .desc
-    %p "I have been an avid movie lover since my teens. And now I have decided to learn the art of film making. I hope to make good movies and be a great director one day."
-    
-.about_movies
-  .label
-    %p What is it about the movies that you love so much?
-  .desc
-    %p "That they draw you into this another world, that time flies away, and that ultimately, they move you. Is it why it's called a movie, I wonder."
-      
-.movie_start
-  .label
-    %p So how did your fascination with movies start.
-  .desc
-    %p "I can't say for sure. I just know that I developed a deep appreciation for the art of movie making."
-    
-    
-.fav_genre
-  .label
-    %p What are some of you favourite genres.
-  .desc
-    %p "I have an affinity for drama, any kind of drama and a good story. Not a fan of horror. And who doesn't love a good comedy, romantic or not. Other than that I am a huge sci-fi fan."
-
-.movie_taste
-  .label
-    %p What is your taste in movies like.
-  .desc
-    %p "I like to watch foreign language films as they give me an insight into life in other cultures. Movies with good conversational dialogues appeal to me a lot. 
-    Other than any movie with a good story is something that I like to watch"
-    
-
-.contact_details
-  .facebook
-    %p Facebook: 
-    = link_to "http://www.facebook.com/ronnie.wadia"
-  .twitter
-    %p Twitter: 
-    = link_to "http://www.facebook.com/ronnie.wadia"
-  .website
-    %p Website: 
-    = link_to "http://www.facebook.com/ronnie.wadia"
-
-    
-    
-.all_time_favourites
-  %p All Time Favourites
-  %ul.favourites
-    %li.favourite
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Dark Knight
-      .detail 
-        %p For the super villain that Joker was. 
-    %li.favourite
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Saw
-      .detail 
-        %p For keeping me on the edge throught, for the layered reveals and then blowing my mind with the master reveal of an ending. 
-    %li.favourite
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Prestige
-      .detail 
-        %p For the intensity of the rivarly between the two magicians. 
-    %li.favourite
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Good Will Hunting
-      .detail 
-        %p For the awesomely awesome conversational dialogue heavy style. Great dialogues and great acting. 
-    %li.favourite
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p 2001 Space Odyssey
-      .detail 
-        %p For filling me with wonder and awe at the imagination of a director dreaming how space travel would be like way back in 1969.
-        
-.movies_that_i_love
-  %p The movies that I love
-  %ul.movies
-    %li.movie
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Before Sunrise
-      .detail 
-        %p Those long fun conversations roaming all around Vienna. 
-    %li.movie
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Before Sunset
-      .detail 
-        %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
-      
-.movies_that_left_a_deep_impact
-  %p The movies that left a deep impact
-  %ul.movies
-    %li.movie
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Before Sunrise
-      .detail 
-        %p Those long fun conversations roaming all around Vienna. 
-    %li.movie
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Before Sunset
-      .detail 
-        %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
+    .data        
+      %table
+        %tr
+          %th
+            Reputation
+          %td
+            100
+        %tr
+          %th
+            Views
+          %td
+            100
+        %tr
+          %th
+            Seen
+          %td
+            12 hrs. ago
+        %tr
+          %th
+            Member since
+          %td
+            1 year, 10 months
           
-.movies_that_i_have_fondness_for
-  %p The movies that I have a fondness for.
-  %ul.movies
-    %li.movie
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Leap Year
-      .detail 
-        %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
-    %li.movie
-      = image_tag "http://placehold.it/100x60"
-      .title 
-        %p Real Steel
-      .detail 
-        %p Absolutely heart warming saga of a boy, his father and his robot.
-
-.my_recommendations
-  %p These are my movie recommendations.
-  .war
-    %h4 Genre: War
-    %p The top war movies that I think are a must watch.
-    %ul.movies
-      %li.movie
-        = image_tag "http://placehold.it/100x60"
-        .title 
-          %p Bridge on River Kwai
-        .detail 
-          %p Quite a classic
-      %li.movie
-        = image_tag "http://placehold.it/100x60"
-        .title 
-          %p Real Steel
-        .detail 
-          %p Absolutely heart warming saga of a boy, his father and his robot.
-    .suggest
-      %p= link_to "Suggest a movie","#"
-    .post_comment
-      %p= link_to "Comment","#"
-    .comments
-      %p Comments
-      %ul
-        %li.comment
-          .type Movie Suggestion:
-          .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
-          .author 
-            .avatar= image_tag "http://placehold.it/20x20"
-            .name Ronald Rutherford
-        %li.comment
-          .desc Quite like this list. I am going to add this to my goal :-)
-          .author 
-            .avatar= image_tag "http://placehold.it/20x20"
-            .name Rambowie Lavar
-  .horror
-    %h4 Genre: Horror
-    %p The top horror movies that I think are a must watch.
-    %ul.movies
-      %li.movie
-        = image_tag "http://placehold.it/100x60"
-        .title 
-          %p Leap Year
-        .detail 
-          %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
-      %li.movie
-        = image_tag "http://placehold.it/100x60"
-        .title 
-          %p Real Steel
-        .detail 
-          %p Absolutely heart warming saga of a boy, his father and his robot.
-    .suggest
-      %p= link_to "Suggest a movie","#"
-    .comment
-      %p= link_to "Comment","#"
-    .comments
-      %p Comments
-      %ul
-        %li.comment
-          .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
-          .author 
-            .avatar= image_tag "http://placehold.it/20x20"
-            .name Ronald Rutherford
-        %li.comment
-          .desc What about Ramboo 4?
-          .author 
-            .avatar= image_tag "http://placehold.it/20x20"
-            .name Rambowie Lavar
-  .happy
-    %h4 Movie Mood: Happy
-    %p These are the movies to watch when you are happy
-    %ul.movies
-      %li.movie
-        = image_tag "http://placehold.it/100x60"
-        .title 
-          %p Leap Year
-        .detail 
-          %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
-      %li.movie
-        = image_tag "http://placehold.it/100x60"
-        .title 
-          %p Real Steel
-        .detail 
-          %p Absolutely heart warming saga of a boy, his father and his robot.
-    .suggest
-      %p= link_to "Suggest a movie","#"
-    .comment
-      %p= link_to "Comment","#"
-    .comments
-      %p Comments
-      %ul
-        %li.comment
-          .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
-          .author 
-            .avatar= image_tag "http://placehold.it/20x20"
-            .name Ronald Rutherford
-        %li.comment
-          .desc What about Ramboo 4?
-          .author 
-            .avatar= image_tag "http://placehold.it/20x20"
-            .name Rambowie Lavar
-
+#bottom.row
+  #col1.span2
+    %p Secondary Nav Bar
+            
+  #col2.span10  
+      
+    
+    .bio    
+      .about_me
+        .question
+          %p So tell us a little bit about yourself.
+        .desc
+          %p "I have been an avid movie lover since my teens. And now I have decided to learn the art of film making. I hope to make good movies and be a great director one day."
           
-  .thriller
-  .comedy
-  .action
-  .sci-fi
-  .war
-  .crime
-  .historical
-  .western
-  .adventure
-  .sports
-  .documentary
-  .fantasy
-
-.my_goals
-  %p These are the movie goals for me.
-  .goals
-    .goal
-      .title
-        %p All Wong Kar Wai movies.
-      .desc
-        %p Very interesting direction style.
-      .progress
-        .watched 
-          %p 2/10 Watched. 
-        .percent
-          %p 20% Complete
+      .about_movies
+        .question
+          %p What is it about the movies that you love so much?
+        .desc
+          %p "That they draw you into this another world, that time flies away, and that ultimately, they move you. Is it why it's called a movie, I wonder."
+            
+      .movie_start
+        .question
+          %p So how did your fascination with movies start.
+        .desc
+          %p "I can't say for sure. I just know that I developed a deep appreciation for the art of movie making."
+          
+          
+      .fav_genre
+        .question
+          %p What are some of you favourite genres.
+        .desc
+          %p "I have an affinity for drama, any kind of drama and a good story. Not a fan of horror. And who doesn't love a good comedy, romantic or not. Other than that I am a huge sci-fi fan."
+      
+      .movie_taste
+        .question
+          %p What is your taste in movies like.
+        .desc
+          %p "I like to watch foreign language films as they give me an insight into life in other cultures. Movies with good conversational dialogues appeal to me a lot. 
+          Other than any movie with a good story is something that I like to watch"
+        
+    
+    .contact_details
+      .facebook
+        %p Facebook: 
+        = link_to "http://www.facebook.com/ronnie.wadia"
+      .twitter
+        %p Twitter: 
+        = link_to "http://www.facebook.com/ronnie.wadia"
+      .website
+        %p Website: 
+        = link_to "http://www.facebook.com/ronnie.wadia"
+    
+        
+        
+    .all_time_favourites
+      %p All Time Favourites
+      %ul.favourites
+        %li.favourite
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p Dark Knight
+          .detail 
+            %p For the super villain that Joker was. 
+        %li.favourite
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p Saw
+          .detail 
+            %p For keeping me on the edge throught, for the layered reveals and then blowing my mind with the master reveal of an ending. 
+        %li.favourite
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p Prestige
+          .detail 
+            %p For the intensity of the rivarly between the two magicians. 
+        %li.favourite
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p Good Will Hunting
+          .detail 
+            %p For the awesomely awesome conversational dialogue heavy style. Great dialogues and great acting. 
+        %li.favourite
+          = image_tag "http://placehold.it/100x60"
+          .title 
+            %p 2001 Space Odyssey
+          .detail 
+            %p For filling me with wonder and awe at the imagination of a director dreaming how space travel would be like way back in 1969.
+            
+    .movies_that_i_love
+      %p The movies that I love
       %ul.movies
         %li.movie
           = image_tag "http://placehold.it/100x60"
           .title 
-            %p A Winter's Tale
+            %p Before Sunrise
           .detail 
-            %p  
+            %p Those long fun conversations roaming all around Vienna. 
         %li.movie
           = image_tag "http://placehold.it/100x60"
           .title 
-            %p La Collectionneuse
+            %p Before Sunset
           .detail 
-            %p
-      .suggest
-        %p= link_to "Suggest a movie","#"
-      .comment
-        %p= link_to "Comment","#"
-      .comments
-        %p Comments
-        %ul
-          %li.comment
-            .type Movie Suggestion:
-            .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
-            .author 
-              .avatar= image_tag "http://placehold.it/20x20"
-              .name Ronald Rutherford
-          %li.comment
-            .desc What about Ramboo 4?
-            .author 
-              .avatar= image_tag "http://placehold.it/20x20"
-              .name Rambowie Lavar
-    .goal
-      .title
-        %p All Britt Marling movies.
-      .desc
-        %p Fell in love with her in Another Earth. Have to see the others.
-      .progress
-        .watched 
-          %p 1/10 Watched. 
-        .percent
-          %p 10% Complete
+            %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
+          
+    .movies_that_left_a_deep_impact
+      %p The movies that left a deep impact
       %ul.movies
         %li.movie
           = image_tag "http://placehold.it/100x60"
           .title 
-            %p A Winter's Tale
+            %p Before Sunrise
           .detail 
-            %p  
+            %p Those long fun conversations roaming all around Vienna. 
         %li.movie
           = image_tag "http://placehold.it/100x60"
           .title 
-            %p La Collectionneuse
+            %p Before Sunset
           .detail 
-            %p
-      .suggest
-        %p= link_to "Suggest a movie","#"
-    .goal
-      .title
-        %p Ram Gopal Varma's Gangster Movie Recommendations
-      .desc
-        %p No one makes Bollywood gangster movies like Ram Gopal!
-      .progress
-        .watched 
-          %p 1/10 Watched. 
-        .percent
-          %p 10% Complete
+            %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
+              
+    .movies_that_i_have_fondness_for
+      %p The movies that I have a fondness for.
       %ul.movies
         %li.movie
           = image_tag "http://placehold.it/100x60"
           .title 
-            %p A Winter's Tale
+            %p Leap Year
           .detail 
-            %p  
+            %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
         %li.movie
           = image_tag "http://placehold.it/100x60"
           .title 
-            %p La Collectionneuse
+            %p Real Steel
           .detail 
-            %p 
-    .goal
-      .title
-        %p Nicola Johnson's Rom Com Movie Recommendations
-      .desc
-        %p A good collection of Rom-coms by Nicola here, not overtly mushy or cheesy.
-      .progress
-        .watched 
-          %p 1/10 Watched. 
-        .percent
-          %p 10% Complete
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p A Winter's Tale
-          .detail 
-            %p  
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p La Collectionneuse
-          .detail 
-            %p 
-    .goal
-      .title
-        %p IMDb top 250 movies
-      .desc
-        %p Have watched most, would love to tick off the rest.
-      .progress
-        .watched 
-          %p 100/250 Watched. 
-        .percent
-          %p 40% Complete
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p A Winter's Tale
-          .detail 
-            %p  
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p La Collectionneuse
-          .detail 
-            %p
-
-.caught_my_eye
-  %h4 Caught My Eye
-  %p These are some of the movies that have caught my eye. Not yet decided if they are worth watching.
-  .goals
-    .goal
-      .title
-        %p All Wong Kar Wai movies.
-      .desc
-        %p Very interesting direction style.
-      .progress
-        .watched 
-          %p 2/10 Watched. 
-        .percent
-          %p 20% Complete
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p A Winter's Tale
-          .detail 
-            %p  
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p La Collectionneuse
-          .detail 
-            %p
-      .suggest
-        %p= link_to "Suggest a movie","#"
-      .comment
-        %p= link_to "Comment","#"
-      .comments
-        %p Comments
-        %ul
-          %li.comment
-            .type Movie Suggestion:
-            .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
-            .author 
-              .avatar= image_tag "http://placehold.it/20x20"
-              .name Ronald Rutherford
-          %li.comment
-            .desc What about Ramboo 4?
-            .author 
-              .avatar= image_tag "http://placehold.it/20x20"
-              .name Rambowie Lavar
-
+            %p Absolutely heart warming saga of a boy, his father and his robot.
     
+    .my_recommendations
+      %p These are my movie recommendations.
+      .war
+        %h4 Genre: War
+        %p The top war movies that I think are a must watch.
+        %ul.movies
+          %li.movie
+            = image_tag "http://placehold.it/100x60"
+            .title 
+              %p Bridge on River Kwai
+            .detail 
+              %p Quite a classic
+          %li.movie
+            = image_tag "http://placehold.it/100x60"
+            .title 
+              %p Real Steel
+            .detail 
+              %p Absolutely heart warming saga of a boy, his father and his robot.
+        .suggest
+          %p= link_to "Suggest a movie","#"
+        .post_comment
+          %p= link_to "Comment","#"
+        .comments
+          %p Comments
+          %ul
+            %li.comment
+              .type Movie Suggestion:
+              .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Ronald Rutherford
+            %li.comment
+              .desc Quite like this list. I am going to add this to my goal :-)
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Rambowie Lavar
+      .horror
+        %h4 Genre: Horror
+        %p The top horror movies that I think are a must watch.
+        %ul.movies
+          %li.movie
+            = image_tag "http://placehold.it/100x60"
+            .title 
+              %p Leap Year
+            .detail 
+              %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+          %li.movie
+            = image_tag "http://placehold.it/100x60"
+            .title 
+              %p Real Steel
+            .detail 
+              %p Absolutely heart warming saga of a boy, his father and his robot.
+        .suggest
+          %p= link_to "Suggest a movie","#"
+        .comment
+          %p= link_to "Comment","#"
+        .comments
+          %p Comments
+          %ul
+            %li.comment
+              .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Ronald Rutherford
+            %li.comment
+              .desc What about Ramboo 4?
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Rambowie Lavar
+      .happy
+        %h4 Movie Mood: Happy
+        %p These are the movies to watch when you are happy
+        %ul.movies
+          %li.movie
+            = image_tag "http://placehold.it/100x60"
+            .title 
+              %p Leap Year
+            .detail 
+              %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+          %li.movie
+            = image_tag "http://placehold.it/100x60"
+            .title 
+              %p Real Steel
+            .detail 
+              %p Absolutely heart warming saga of a boy, his father and his robot.
+        .suggest
+          %p= link_to "Suggest a movie","#"
+        .comment
+          %p= link_to "Comment","#"
+        .comments
+          %p Comments
+          %ul
+            %li.comment
+              .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Ronald Rutherford
+            %li.comment
+              .desc What about Ramboo 4?
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Rambowie Lavar
     
+              
+      .thriller
+      .comedy
+      .action
+      .sci-fi
+      .war
+      .crime
+      .historical
+      .western
+      .adventure
+      .sports
+      .documentary
+      .fantasy
     
+    .my_goals
+      %p These are the movie goals for me.
+      .goals
+        .goal
+          .title
+            %p All Wong Kar Wai movies.
+          .desc
+            %p Very interesting direction style.
+          .progress
+            .watched 
+              %p 2/10 Watched. 
+            .percent
+              %p 20% Complete
+          %ul.movies
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p A Winter's Tale
+              .detail 
+                %p  
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p La Collectionneuse
+              .detail 
+                %p
+          .suggest
+            %p= link_to "Suggest a movie","#"
+          .comment
+            %p= link_to "Comment","#"
+          .comments
+            %p Comments
+            %ul
+              %li.comment
+                .type Movie Suggestion:
+                .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+                .author 
+                  .avatar= image_tag "http://placehold.it/20x20"
+                  .name Ronald Rutherford
+              %li.comment
+                .desc What about Ramboo 4?
+                .author 
+                  .avatar= image_tag "http://placehold.it/20x20"
+                  .name Rambowie Lavar
+        .goal
+          .title
+            %p All Britt Marling movies.
+          .desc
+            %p Fell in love with her in Another Earth. Have to see the others.
+          .progress
+            .watched 
+              %p 1/10 Watched. 
+            .percent
+              %p 10% Complete
+          %ul.movies
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p A Winter's Tale
+              .detail 
+                %p  
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p La Collectionneuse
+              .detail 
+                %p
+          .suggest
+            %p= link_to "Suggest a movie","#"
+        .goal
+          .title
+            %p Ram Gopal Varma's Gangster Movie Recommendations
+          .desc
+            %p No one makes Bollywood gangster movies like Ram Gopal!
+          .progress
+            .watched 
+              %p 1/10 Watched. 
+            .percent
+              %p 10% Complete
+          %ul.movies
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p A Winter's Tale
+              .detail 
+                %p  
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p La Collectionneuse
+              .detail 
+                %p 
+        .goal
+          .title
+            %p Nicola Johnson's Rom Com Movie Recommendations
+          .desc
+            %p A good collection of Rom-coms by Nicola here, not overtly mushy or cheesy.
+          .progress
+            .watched 
+              %p 1/10 Watched. 
+            .percent
+              %p 10% Complete
+          %ul.movies
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p A Winter's Tale
+              .detail 
+                %p  
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p La Collectionneuse
+              .detail 
+                %p 
+        .goal
+          .title
+            %p IMDb top 250 movies
+          .desc
+            %p Have watched most, would love to tick off the rest.
+          .progress
+            .watched 
+              %p 100/250 Watched. 
+            .percent
+              %p 40% Complete
+          %ul.movies
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p A Winter's Tale
+              .detail 
+                %p  
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p La Collectionneuse
+              .detail 
+                %p
     
+    .caught_my_eye
+      %h4 Caught My Eye
+      %p These are some of the movies that have caught my eye. Not yet decided if they are worth watching.
+      .goals
+        .goal
+          .title
+            %p All Wong Kar Wai movies.
+          .desc
+            %p Very interesting direction style.
+          .progress
+            .watched 
+              %p 2/10 Watched. 
+            .percent
+              %p 20% Complete
+          %ul.movies
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p A Winter's Tale
+              .detail 
+                %p  
+            %li.movie
+              = image_tag "http://placehold.it/100x60"
+              .title 
+                %p La Collectionneuse
+              .detail 
+                %p
+          .suggest
+            %p= link_to "Suggest a movie","#"
+          .comment
+            %p= link_to "Comment","#"
+          .comments
+            %p Comments
+            %ul
+              %li.comment
+                .type Movie Suggestion:
+                .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+                .author 
+                  .avatar= image_tag "http://placehold.it/20x20"
+                  .name Ronald Rutherford
+              %li.comment
+                .desc What about Ramboo 4?
+                .author 
+                  .avatar= image_tag "http://placehold.it/20x20"
+                  .name Rambowie Lavar
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

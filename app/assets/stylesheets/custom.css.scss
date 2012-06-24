@@ -26,31 +26,60 @@ textarea {
   margin-bottom: 10px;
 }
 
+.container {
+	text-align: left;
+}
+
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+h1 {
+  letter-spacing: -2px;
+  
+  &.name {
+  	margin-bottom: 2px;
+  }
+  
 }
 
-h1 {
-  font-size: 3em;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-  text-align: center;
-}
 
 h2 {
-  font-size: 1.7em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  font-weight: normal;
-  color: #000;
+
+	&.prof_title{
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 24px;
+		color: #777;
+		
+	}
 }
 
+p {
+	&.about_me_liner{
+		color: #777;
+		word-wrap: break-word;
+		font-family: Georgia, 'Times New Roman', serif;
+		font-size: 13px;
+		font-style: italic;
+		font-variant: normal;
+		font-weight: normal;
+		line-height: 18px;
+	}
+
+}
+
+
+.movie_mood_quote {
+		font-style: italic;
+		color: #777;
+}
+
+/*
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
+*/
+
 
 /* header */
 
@@ -70,3 +99,53 @@ p {
   color: #fff;
   text-decoration: none;
 }
+
+.question {
+	font-weight: bold;
+}
+
+.textlabel {
+	font-weight: bold;
+}
+
+.data{
+	
+	table {
+		margin-top: 15px;
+	}
+	td {
+		padding: 3px 20px 3px 0;
+	}	
+	th {
+		padding: 3px 20px 3px 0;
+	}
+}
+
+/* Stats table */
+ul.stats-tabs {
+	margin-bottom: 50px;
+}
+
+ul.stats-tabs li {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0 10px 0 0;
+	border-right: 1px solid #ccc;
+	}
+ul.stats-tabs li:last-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+	}
+ul.stats-tabs li a {	
+	display: block;
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	}
+ul.stats-tabs li a span {
+	display: block;
+	margin-top: 2px;
+	font-size: 13px;
+	font-weight: normal;
+	}
