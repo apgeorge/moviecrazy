@@ -153,3 +153,22 @@ ul.stats-tabs li a span {
 #top.row {
 	margin-bottom: 20px;
 }	
+
+.favourite {
+  img {
+    margin-bottom: 10px;
+  }
+    
+  .title {
+    p {
+      font-size: medium;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+    }
+  }  
+}
+
+ul.favourites {
+  margin-top: 10px;
+}
