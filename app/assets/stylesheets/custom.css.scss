@@ -154,21 +154,22 @@ ul.stats-tabs li a span {
 	margin-bottom: 20px;
 }	
 
-.favourite {
+li .title {
+  p {
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+  }
+}  
+
+
+.thumbnail {
   img {
     margin-bottom: 10px;
   }
-    
-  .title {
-    p {
-      font-size: medium;
-      font-style: italic;
-      font-weight: bold;
-      text-align: center;
-    }
-  }  
 }
 
-ul.favourites {
+ul.thumbnails {
   margin-top: 10px;
 }

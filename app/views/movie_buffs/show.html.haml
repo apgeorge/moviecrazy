@@ -221,70 +221,78 @@
             
     .movies_that_i_love.tab-pane(id="tab6")
       %h2 The movies that I love
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p Before Sunrise
-          .detail 
-            %p Those long fun conversations roaming all around Vienna. 
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p Before Sunset
-          .detail 
-            %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
-          
+      %ul.movies.thumbnails
+        %li.span3
+          .movie.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Before Sunrise
+            .detail 
+              %p Those long fun conversations roaming all around Vienna. 
+        %li.span3
+          .movie.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Before Sunset
+            .detail 
+              %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
+            
     .movies_that_left_a_deep_impact.tab-pane(id="tab7")
       %h2 The movies that left a deep impact
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p Before Sunrise
-          .detail 
-            %p Those long fun conversations roaming all around Vienna. 
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p Before Sunset
-          .detail 
-            %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
-              
+      %ul.movies.thumbnails
+        %li.span3
+          .movie.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Before Sunrise
+            .detail 
+              %p Those long fun conversations roaming all around Vienna. 
+        %li.span3
+          .movie.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Before Sunset
+            .detail 
+              %p Again, the long conversations, but this time more mature, intelligent and ..different than the last time.
+                
     .movies_that_i_have_fondness_for.tab-pane(id="tab8")
       %h2 The movies that I have a fondness for.
-      %ul.movies
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p Leap Year
-          .detail 
-            %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
-        %li.movie
-          = image_tag "http://placehold.it/100x60"
-          .title 
-            %p Real Steel
-          .detail 
-            %p Absolutely heart warming saga of a boy, his father and his robot.
-    
+      %ul.movies.thumbnails
+        %li.span3
+          .movie.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Leap Year
+            .detail 
+              %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Real Steel
+            .detail 
+              %p Absolutely heart warming saga of a boy, his father and his robot.
+      
     .my_recommendations.tab-pane(id="tab3")
       %h2 These are my movie recommendations.
       .war
         %h4 Genre: War
         %p The top war movies that I think are a must watch.
-        %ul.movies
-          %li.movie
-            = image_tag "http://placehold.it/100x60"
-            .title 
-              %p Bridge on River Kwai
-            .detail 
-              %p Quite a classic
-          %li.movie
-            = image_tag "http://placehold.it/100x60"
-            .title 
-              %p Real Steel
-            .detail 
-              %p Absolutely heart warming saga of a boy, his father and his robot.
+        %ul.movies.thumbnails
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Bridge on River Kwai
+              .detail 
+                %p Quite a classic
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Real Steel
+              .detail 
+                %p Absolutely heart warming saga of a boy, his father and his robot.
         .suggest
           %p= link_to "Suggest a movie","#"
         .post_comment
@@ -306,19 +314,21 @@
       .horror
         %h4 Genre: Horror
         %p The top horror movies that I think are a must watch.
-        %ul.movies
-          %li.movie
-            = image_tag "http://placehold.it/100x60"
-            .title 
-              %p Leap Year
-            .detail 
-              %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
-          %li.movie
-            = image_tag "http://placehold.it/100x60"
-            .title 
-              %p Real Steel
-            .detail 
-              %p Absolutely heart warming saga of a boy, his father and his robot.
+        %ul.movies.thumbnails
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Leap Year
+              .detail 
+                %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Real Steel
+              .detail 
+                %p Absolutely heart warming saga of a boy, his father and his robot.
         .suggest
           %p= link_to "Suggest a movie","#"
         .comment
@@ -339,19 +349,21 @@
       .happy
         %h4 Movie Mood: Happy
         %p These are the movies to watch when you are happy
-        %ul.movies
-          %li.movie
-            = image_tag "http://placehold.it/100x60"
-            .title 
-              %p Leap Year
-            .detail 
-              %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
-          %li.movie
-            = image_tag "http://placehold.it/100x60"
-            .title 
-              %p Real Steel
-            .detail 
-              %p Absolutely heart warming saga of a boy, his father and his robot.
+        %ul.movies.thumbnails
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Leap Year
+              .detail 
+                %p Sweet romantic comedy, beautiful Irish country side, and Amy Adams charmingly comic. 
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Real Steel
+              .detail 
+                %p Absolutely heart warming saga of a boy, his father and his robot.
         .suggest
           %p= link_to "Suggest a movie","#"
         .comment
@@ -397,19 +409,21 @@
               %p 2/10 Watched. 
             .percent
               %p 20% Complete
-          %ul.movies
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p A Winter's Tale
-              .detail 
-                %p  
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p La Collectionneuse
-              .detail 
-                %p
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p A Winter's Tale
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p La Collectionneuse
+                .detail 
+                  %p
           .suggest
             %p= link_to "Suggest a movie","#"
           .comment
@@ -438,19 +452,21 @@
               %p 1/10 Watched. 
             .percent
               %p 10% Complete
-          %ul.movies
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p A Winter's Tale
-              .detail 
-                %p  
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p La Collectionneuse
-              .detail 
-                %p
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p A Winter's Tale
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p La Collectionneuse
+                .detail 
+                  %p
           .suggest
             %p= link_to "Suggest a movie","#"
         .goal
@@ -463,19 +479,21 @@
               %p 1/10 Watched. 
             .percent
               %p 10% Complete
-          %ul.movies
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p A Winter's Tale
-              .detail 
-                %p  
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p La Collectionneuse
-              .detail 
-                %p 
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p A Winter's Tale
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p La Collectionneuse
+                .detail 
+                  %p 
         .goal
           .title
             %p Nicola Johnson's Rom Com Movie Recommendations
@@ -486,19 +504,21 @@
               %p 1/10 Watched. 
             .percent
               %p 10% Complete
-          %ul.movies
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p A Winter's Tale
-              .detail 
-                %p  
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p La Collectionneuse
-              .detail 
-                %p 
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p A Winter's Tale
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p La Collectionneuse
+                .detail 
+                  %p 
         .goal
           .title
             %p IMDb top 250 movies
@@ -509,19 +529,21 @@
               %p 100/250 Watched. 
             .percent
               %p 40% Complete
-          %ul.movies
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p A Winter's Tale
-              .detail 
-                %p  
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p La Collectionneuse
-              .detail 
-                %p
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p A Winter's Tale
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p La Collectionneuse
+                .detail 
+                  %p
     
     .caught_my_eye.tab-pane(id="tab5")
       %h2 Caught My Eye
@@ -537,19 +559,21 @@
               %p 2/10 Watched. 
             .percent
               %p 20% Complete
-          %ul.movies
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p A Winter's Tale
-              .detail 
-                %p  
-            %li.movie
-              = image_tag "http://placehold.it/100x60"
-              .title 
-                %p La Collectionneuse
-              .detail 
-                %p
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p A Winter's Tale
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p La Collectionneuse
+                .detail 
+                  %p
           .suggest
             %p= link_to "Suggest a movie","#"
           .comment
