@@ -80,6 +80,9 @@
       %a(href="#tab1" data-toggle="tab")
         About Me
     %li
+      %a(href="#tab9" data-toggle="tab")
+        My Taste
+    %li
       %a(href="#tab2" data-toggle="tab")
         All Time Favourites
     %li
@@ -123,14 +126,27 @@
           %p What are some of you favourite genres.
         .desc
           %p "I have an affinity for drama, any kind of drama and a good story. Not a fan of horror. And who doesn't love a good comedy, romantic or not. Other than that I am a huge sci-fi fan."
-      
+          %p "I also like inspiring sports movies like the Mighty Ducks, Clash of the Titans etc.."
       .movie_taste
         .question
-          %p What is your taste in movies like.
+          %p What is your taste in movies like( What kind of movies do you like to watch )
         .desc
           %p "I like to watch foreign language films as they give me an insight into life in other cultures. Movies with good conversational dialogues appeal to me a lot. 
           Other than any movie with a good story is something that I like to watch"
-        
+      .fav_genre
+        %h3 Favourite Genres
+        %ul
+          %li Sports
+          %li Action
+          %li Thriller
+          %li Mystery
+      .fav_movie_moods
+        %h3 Favourite Movie Moods
+        %ul
+          %li Fun
+          %li Light-hearted
+          %li High-Drama
+          %li Sports-based
       .contact_details
         %h3 Contact    
         .facebook
@@ -142,8 +158,139 @@
         .website
           %p Website: 
           = link_to "http://www.facebook.com/ronnie.wadia"
+    
+    .my-taste.tab-pane(id="tab9")
+      %h2 The kind of movies that I like to watch.
       
-        
+      .tastes
+        .taste
+          %h3 Sports movies which are inspiring and have a great climax.
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p The Mighty Duck
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p The Clash of the Titans
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Rudy
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Miracle
+                .detail 
+                  %p
+          .suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
+        .taste
+          %h3 Highly conversational movies with good dialogues.
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Good Will Hunting
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Before Sunrise
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Before Sunset
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p 12 Angry Men
+                .detail 
+                  %p
+          .suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
+                    
+        .taste
+          %h3 Movies with great twist endings which no one saw coming.
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Sixth Sense
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Usual Suspects
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Shawshank Redemption
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Saw
+                .detail 
+                  %p
+          .suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
+                    
+        .taste
+          %h3 Good Science fiction (not just a movie with an alien)
+          %ul.movies.thumbnails
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p 2001 Space Odyssey
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Moon
+                .detail 
+                  %p  
+            %li.span3
+              .movie.thumbnail
+                = image_tag "http://placehold.it/230x341"
+                .title 
+                  %p Minority Report
+                .detail 
+                  %p
+          .suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
+                    
         
     .all_time_favourites.tab-pane(id="tab2")
       %h2 All Time Favourites
@@ -204,6 +351,21 @@
               %p Prestige
             .detail 
               %p For the intensity of the rivarly between the two magicians. 
+        %li.span3
+          .favourite.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p Good Will Hunting
+            .detail 
+              %p For the awesomely awesome conversational dialogue heavy style. Great dialogues and great acting. 
+        %li.span3
+          .favourite.thumbnail
+            = image_tag "http://placehold.it/230x341"
+            .title 
+              %p 2001 Space Odyssey
+            .detail 
+              %p For filling me with wonder and awe at the imagination of a director dreaming how space travel would be like way back in 1969.
+            
         %li.span3
           .favourite.thumbnail
             = image_tag "http://placehold.it/230x341"
