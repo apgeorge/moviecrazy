@@ -395,7 +395,8 @@
               %p For filling me with wonder and awe at the imagination of a director dreaming how space travel would be like way back in 1969.
             
     .movies_that_i_love.tab-pane(id="tab6")
-      %h2 The movies that I love
+      .header
+        %h2 The movies that I love
       %ul.movies.thumbnails
         %li.span3
           .movie.thumbnail
@@ -455,7 +456,7 @@
           %small
             These are my movie recommendations.
       .recommendation
-        %h3 Genre: War
+        %h3 Recommendation / Genre / War 
         .desc
           %p The top war movies that I think are a must watch.
         %ul.movies.thumbnails
@@ -492,7 +493,7 @@
                 .avatar= image_tag "http://placehold.it/20x20"
                 .name Rambowie Lavar
       .recommendation
-        %h3 Genre: Horror
+        %h3 Recommendation / Genre / Horror
         .desc
           %p The top horror movies that I think are a must watch.
         %ul.movies.thumbnails
@@ -528,7 +529,7 @@
                 .avatar= image_tag "http://placehold.it/20x20"
                 .name Rambowie Lavar
       .recommendation
-        %h3 Movie Mood: Happy
+        %h3 Recommendation / Movie Mood / Happy
         .desc
           %p These are the movies to watch when you are happy
         %ul.movies.thumbnails
@@ -546,6 +547,42 @@
                 %p Real Steel
               .detail 
                 %p Absolutely heart warming saga of a boy, his father and his robot.
+        %span.suggest
+          = link_to "Suggest a movie","#",class: "btn btn-primary"
+        %span.post_comment
+          = link_to '<i class="icon-comment"></i> Comment'.html_safe,"#",class: "btn"
+        .comments
+          %h3 Comments
+          %ul
+            %li.comment
+              .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Ronald Rutherford
+            %li.comment
+              .desc What about Ramboo 4?
+              .author 
+                .avatar= image_tag "http://placehold.it/20x20"
+                .name Rambowie Lavar
+      .recommendation
+        %h3 Recommendation / Director / Christopher Nolan
+        .desc
+          %p My Favourite Director, very intense, dramatic and intelligent movies. A definite must watch
+        %ul.movies.thumbnails
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Dark Knight
+              .detail 
+                %p  
+          %li.span3
+            .movie.thumbnail
+              = image_tag "http://placehold.it/230x341"
+              .title 
+                %p Prestige
+              .detail 
+                %p 
         %span.suggest
           = link_to "Suggest a movie","#",class: "btn btn-primary"
         %span.post_comment
@@ -746,7 +783,7 @@
         %h2 
           Caught My Eye
           %small
-            These are some of the movies that have caught my eye.
+            These are some of the movies that seem interesting
       .goals
         .goal
           .title
