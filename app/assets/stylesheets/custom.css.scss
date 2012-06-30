@@ -183,3 +183,20 @@ ul.thumbnails {
 .taste {
   margin-top: 20px;
 }
+
+.nav-tabs {
+  border-bottom: 1px solid #666;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-tabs a {
+  color: #777;
+}
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+  border: 1px solid #777;
+  border-bottom-color: transparent;
+  color: black;
+  font-size: 110%;
+}
