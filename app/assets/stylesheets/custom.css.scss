@@ -180,8 +180,12 @@ ul.thumbnails {
   margin-bottom: 0px;
 }
 
-.taste {
+.recommendation,
+.goal,
+.taste  {
   margin-top: 20px;
+  border-bottom: 1px solid #BBB;
+  padding-bottom: 10px;
 }
 
 .nav-tabs {
@@ -199,4 +203,9 @@ ul.thumbnails {
   border-bottom-color: transparent;
   color: black;
   font-size: 110%;
+}
+
+.header {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 18px;
 }

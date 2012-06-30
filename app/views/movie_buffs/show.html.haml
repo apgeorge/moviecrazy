@@ -101,7 +101,12 @@
 #bottom.row
   #col1.span12.tab-content  
     .bio.tab-pane.active(id="tab1")
-      %h2 About Me    
+      .header
+        %h2 
+          About Me  
+          %small
+            bio
+        
       .about_me
         .question
           %p So tell us a little bit about yourself.
@@ -160,7 +165,11 @@
           = link_to "http://www.facebook.com/ronnie.wadia"
     
     .my-taste.tab-pane(id="tab9")
-      %h2 The kind of movies that I like to watch.
+      .header
+        %h2 
+          My Taste
+          %small
+            The kind of movies that I like to watch.
       
       .tastes
         .taste
@@ -293,7 +302,11 @@
                     
         
     .all_time_favourites.tab-pane(id="tab2")
-      %h2 All Time Favourites
+      .header
+        %h2 
+          All Time Favourites
+          %small
+            The movies that I like most
       %ul.favourites.thumbnails
         %li.span3
           .favourite.thumbnail
@@ -436,8 +449,12 @@
               %p Absolutely heart warming saga of a boy, his father and his robot.
       
     .my_recommendations.tab-pane(id="tab3")
-      %h2 These are my movie recommendations.
-      .war
+      .header
+        %h2
+          Recommendations
+          %small
+            These are my movie recommendations.
+      .recommendation
         %h3 Genre: War
         %p The top war movies that I think are a must watch.
         %ul.movies.thumbnails
@@ -473,7 +490,7 @@
               .author 
                 .avatar= image_tag "http://placehold.it/20x20"
                 .name Rambowie Lavar
-      .horror
+      .recommendation
         %h3 Genre: Horror
         %p The top horror movies that I think are a must watch.
         %ul.movies.thumbnails
@@ -508,7 +525,7 @@
               .author 
                 .avatar= image_tag "http://placehold.it/20x20"
                 .name Rambowie Lavar
-      .happy
+      .recommendation
         %h3 Movie Mood: Happy
         %p These are the movies to watch when you are happy
         %ul.movies.thumbnails
@@ -559,7 +576,11 @@
       .fantasy
     
     .my_goals.tab-pane(id="tab4")
-      %h2 These are the movie goals for me.
+      .header
+        %h2
+          Goals
+          %small
+            These are the movie goals that I have set for myself.
       .goals
         .goal
           .title
@@ -708,8 +729,11 @@
                   %p
     
     .caught_my_eye.tab-pane(id="tab5")
-      %h2 Caught My Eye
-      %p These are some of the movies that have caught my eye. Not yet decided if they are worth watching.
+      .header
+        %h2 
+          Caught My Eye
+          %small
+            These are some of the movies that have caught my eye.
       .goals
         .goal
           .title
