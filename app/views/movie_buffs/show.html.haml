@@ -194,7 +194,7 @@
                   %p Miracle
                 .detail 
                   %p
-          .suggest
+          %span.suggest
             = link_to "Suggest a movie","#",class: "btn btn-primary"
         .taste
           %h3 Highly conversational movies with good dialogues.
@@ -227,7 +227,7 @@
                   %p 12 Angry Men
                 .detail 
                   %p
-          .suggest
+          %span.suggest
             = link_to "Suggest a movie","#",class: "btn btn-primary"
                     
         .taste
@@ -261,7 +261,7 @@
                   %p Saw
                 .detail 
                   %p
-          .suggest
+          %span.suggest
             = link_to "Suggest a movie","#",class: "btn btn-primary"
                     
         .taste
@@ -288,7 +288,7 @@
                   %p Minority Report
                 .detail 
                   %p
-          .suggest
+          %span.suggest
             = link_to "Suggest a movie","#",class: "btn btn-primary"
                     
         
@@ -455,12 +455,12 @@
                 %p Real Steel
               .detail 
                 %p Absolutely heart warming saga of a boy, his father and his robot.
-        .suggest
-          %p= link_to "Suggest a movie","#",class: "btn btn-primary"
-        .post_comment
-          %p= link_to "Comment","#"
+        %span.suggest
+          = link_to "Suggest a movie","#",class: "btn btn-primary"
+        %span.post_comment
+          = link_to '<i class="icon-comment"></i> Comment'.html_safe,"#",class: "btn"
         .comments
-          %p Comments
+          %h4 Comments
           %ul
             %li.comment
               .type Movie Suggestion:
@@ -491,12 +491,12 @@
                 %p Real Steel
               .detail 
                 %p Absolutely heart warming saga of a boy, his father and his robot.
-        .suggest
-          %p= link_to "Suggest a movie","#",class: "btn btn-primary"
-        .comment
-          %p= link_to "Comment","#"
+        %span.suggest
+          = link_to "Suggest a movie","#",class: "btn btn-primary"
+        %span.post_comment
+          = link_to '<i class="icon-comment"></i> Comment'.html_safe,"#",class: "btn"
         .comments
-          %p Comments
+          %h3 Comments
           %ul
             %li.comment
               .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
@@ -526,12 +526,12 @@
                 %p Real Steel
               .detail 
                 %p Absolutely heart warming saga of a boy, his father and his robot.
-        .suggest
-          %p= link_to "Suggest a movie","#",class: "btn btn-primary"
-        .comment
-          %p= link_to "Comment","#"
+        %span.suggest
+          = link_to "Suggest a movie","#",class: "btn btn-primary"
+        %span.post_comment
+          = link_to '<i class="icon-comment"></i> Comment'.html_safe,"#",class: "btn"
         .comments
-          %p Comments
+          %h3 Comments
           %ul
             %li.comment
               .desc You have to have Saving Private Ryan in this list. It's won so many oscars.
@@ -586,12 +586,12 @@
                   %p La Collectionneuse
                 .detail 
                   %p
-          .suggest
-            %p= link_to "Suggest a movie","#",class: "btn btn-primary"
-          .comment
-            %p= link_to "Comment","#"
+          %span.suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
+          %span.post_comment
+            = link_to '<i class="icon-comment"></i> Comment'.html_safe,"#",class: "btn"
           .comments
-            %p Comments
+            %h3 Comments
             %ul
               %li.comment
                 .type Movie Suggestion:
@@ -629,8 +629,8 @@
                   %p La Collectionneuse
                 .detail 
                   %p
-          .suggest
-            %p= link_to "Suggest a movie","#",class: "btn btn-primary"
+          %span.suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
         .goal
           .title
             %h3 Ram Gopal Varma's Gangster Movie Recommendations
@@ -713,7 +713,7 @@
       .goals
         .goal
           .title
-            %p All Wong Kar Wai movies.
+            %h3 All Wong Kar Wai movies.
           .desc
             %p Very interesting direction style.
           .progress
@@ -736,12 +736,12 @@
                   %p La Collectionneuse
                 .detail 
                   %p
-          .suggest
-            %p= link_to "Suggest a movie","#",class: "btn btn-primary"
-          .comment
-            %p= link_to "Comment","#"
+          %span.suggest
+            = link_to "Suggest a movie","#",class: "btn btn-primary"
+          %span.post_comment
+            = link_to '<i class="icon-comment"></i> Comment'.html_safe,"#",class: "btn"
           .comments
-            %p Comments
+            %h4 Comments
             %ul
               %li.comment
                 .type Movie Suggestion:
