@@ -110,6 +110,7 @@ p {
 	p {
 	  font-size: 120%;
 	  color: #444;
+	  font-family: "myriad-pro-1", "myriad-pro-2", "Myriad Pro", Verdana, "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
 	}
 }
 
@@ -224,7 +225,7 @@ ul.thumbnails {
   color: #444;
 }
 
-blockquote {
+.answer blockquote {
   padding-right: 0.75em;
   padding-left: 0.75em;
   text-indent: -0.9em;
@@ -234,7 +235,7 @@ blockquote {
   line-height: 1.5em;
 }
 
-blockquote span.highlight {
+.answer blockquote span.highlight {
   color: #C24D9B;
   font-family: Palatino, 'Book Antiqua', 'Hoefler Text', Georgia, serif;
   font-size: 1.2em;
